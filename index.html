@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChefRobot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="scripts/app.js" type="module"></script>
+</head>
+<body>
+
+        <!--navbar start-->
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li id="logo">
+                        <a href="">
+                            <img class="logoImg" src="images/cookingAI.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a  id="name" href="#">Chef<i class="fa-solid fa-robot fa-lg"></i>obot </a>
+                    </li>
+                    <li>
+                       Saved recipes
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!--navbar end-->
+        <!--main start-->
+        <main>
+            <div class="main-container">
+                <div class="chatbot-section">
+                    <robot-prompt></robot-prompt>
+                        <div class="human-container">
+
+                        </div>
+                        <div class="robot-container">
+
+                        </div>
+
+
+
+
+
+                </div>
+                <div class="prompt-section">
+                    <div class="prompt-style">
+                        <textarea name="chatbot" placeholder="Enter your desired recipe " rows="1" id="chatbot"></textarea>
+                        <button disabled class="send-icon">
+                            <i class=" fa-solid fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="timer-section">
+                    <div class="circle-time-container">
+                        <h2 id="timer"></h2>
+
+                    </div>
+                    <div class="action-timer">
+                        <button id="start">
+                            <i class="fa-solid fa-circle-play fa-lg"></i>
+                            <small>start cooking</small>
+                        </button>
+                        <button id="stop">
+                            <i class="fa-solid fa-circle-stop fa-lg"></i>
+                            <small>stop cooking</small>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="recipe-section">
+                    <h3>Recipe :</h3>
+                    <div class="steps">
+
+                        <ul class="steps-recipe">
+
+
+                        </ul>
+                    </div>
+                    <div class="recipe-img-ingredients">
+                        <img id="recipe-img"  alt="recipe">
+                        <p>Ingredients : </p>
+                        <div class="ingredients">
+                            <p class="list-of-ingredients"></p>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </main>
+</body>
+</html>
